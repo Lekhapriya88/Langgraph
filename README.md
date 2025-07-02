@@ -21,3 +21,26 @@ The script simulates triage automation for ITSM tickets, helping determine wheth
 1. Install required packages:
    ```bash
    pip install langgraph langchain-openai pydantic pandas
+   ```
+
+2. Set your OpenAI API key:
+   ```bash
+   export OPENAI_API_KEY="your-api-key"
+   ```
+
+3. Run the script:
+   ```bash
+   python langgraph_agent_with_logging.py
+   ```
+
+## 📝 Example Output
+
+```
+🔍 Processing Ticket: P001 - User cannot connect to VPN
+✅ Action: Troubleshoot VPN connection issue
+📝 Notes: User unable to connect to VPN. Escalated to support team.
+
+📊 Final Results:
+  Ticket_ID           Action                  Notes
+  ...                 ...                     ...
+```
